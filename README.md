@@ -11,13 +11,11 @@ Please pay attention to the #define under i2c-lcd.h, and to the exported i²C ha
 
 This library was built to use with STM32 HAL for STM32 devices.
 
-Steps to use this library:
+1. Configure the desired i²c pins you want to use with the LCD as GPIOs with internal pull-up resistors (you may use STM32CubeMX).
+2. Import this library into your generated project and link to compilation the folder.
+3. Call lcd_init() to initialize the LCD.
 
-Configure the desired i²c pins you want to use with the LCD as GPIOs with internal pull-up resistors (you may use STM32CubeMX).
-Import this library into your generated project and link to compilation the folder.
-
-
-Call lcd_init() to initialize the LCD. Your are now good to go!
+Your are now good to go!
 You can now use all the function according to your preferences. 
 
 Hope these may help you for your project.
